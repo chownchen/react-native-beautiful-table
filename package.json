@@ -1,7 +1,7 @@
 {
   "name": "react-native-beautiful-table",
   "version": "1.0.0",
-  "description": "use like antd table for react native.",
+  "description": "use like antd table for react native",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "lodash": "~4.17.21",
-    "react-native-table-component": "~1.2.1"
+    "react-native-table-component": "~1.2.1",
+    "lottie-react-native": "~5.0.1"
   }
 }
