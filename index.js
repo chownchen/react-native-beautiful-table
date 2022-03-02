@@ -1,3 +1,3 @@
- import BeautifulTable from './table/index';
+ import BeautifulTable from './table';
 
  export default BeautifulTable;

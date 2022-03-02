@@ -7,7 +7,6 @@ import RootSiblings from 'react-native-root-siblings'
 
 import AsLottie from '../as-lottie'
 import loading32 from '~/assets/json/loading-32.json'
-import colors from '~/common/colors'
 
 const LoadingContainer = () => {
   return (
@@ -85,7 +84,7 @@ const styles = StyleSheet.create({
   gText: {
     fontSize: 12,
 
-    color: colors.white
+    color: '#fff'
   }
 })
 

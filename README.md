@@ -1,13 +1,4 @@
-<p align="center">
-  <!-- <img src="https://github.com/Gil2015/tools_file/blob/master/img/react-native-table-component/react-native-table-component-logo.png?raw=true" width="170" /> -->
-</p>
-
-<h1 align="center">React Native Beautiful Component</h1>
-
-<p align="center">
-  <a href="https://www.npmjs.com/package/react-native-table-component"><img src="https://img.shields.io/badge/platform-Android%20%7C%20iOS-yellow.svg" /></a>
-  <a href="https://www.npmjs.com/package/react-native-table-component"><img src="https://img.shields.io/npm/dm/react-native-table-component.svg?colorB=orange" /></a>
-</p>
+# React Native Beautiful Component
 
 ## 介绍
 这是一个 api 类似 `antd-table` 的 react-native 组件库，用配置化的方式使用非常方便
@@ -20,7 +11,7 @@
   - 支持支持列横向竖向滚动（包括列冻结时的滚动一致性）
   - 样式调整
 
-它借用了 `react-native-table-component` 组件的能力，并进行了一些优化和改进
+它借用了 `react-native-table-component` 组件的能力，并进行了深度优化和改进
 如果您对项目感兴趣，请通过电子邮件联系ichenzhangdong@foxmail.com.
 
 <br/><br/>
@@ -34,7 +25,7 @@
 - [注意事项](#注意事项)
 - [License](#license)
 
-[Switch to English document](https://github.com/Gil2015/react-native-table-component#Changelogs)
+[Switch to English document](https://github.com/chownchen/react-native-beautiful-table#Changelogs)
 <br/><br/>
 
 ## 安装
@@ -54,7 +45,7 @@ import BeautifulTable from 'react-native-beautiful-component';
 ## Examples
 
 #### 例一 一般使用
-<img src="https://github.com/Gil2015/tools_file/blob/master/img/react-native-table-component/exampleOne.png?raw=true" width="320"/>
+<img src="https://github.com/chownchen/tools_file/blob/main/beautiful-table-demo.jpg?raw=true" width="320"/>
 
 ```jsx
 import React from 'react';
@@ -66,20 +57,24 @@ const demoPage = () => {
   const columns = [
     {
       title: '序号',
-      dataKey: 'id'
+      dataKey: 'id',
+      width: 50,
     },
     {
       title: '品牌',
-      dataKey: 'brand'
+      dataKey: 'brand',
+      flex: 1
     },
     {
       title: '手机名',
-      dataKey: 'name'
+      dataKey: 'name',
+      flex: 1
     },
     {
       title: '模型',
       dataKey: 'model',
-      align: 'right'
+      align: 'right',
+      flex: 1
     }
   ]
 
@@ -97,7 +92,7 @@ const demoPage = () => {
 
   return (
     <View flex={1}>
-     <BeautifulTable columns={columns} data={data} />
+     <BeautifulTable containerStyle={{paddingHorizontal: 20}} columns={columns} data={data} />
   </View>
   )
 }
@@ -106,7 +101,6 @@ const demoPage = () => {
 ---
 
 #### 例二 自定义内容 左侧列冻结
-<img src="https://github.com/Gil2015/tools_file/blob/master/img/react-native-table-component/exampleTwo.png?raw=true" width="320"/>
 
 ```jsx
 import React from 'react';
@@ -163,8 +157,6 @@ const demoPage = () => {
 ---
 
 #### 例三 点击子列表展开
-<img src="https://github.com/Gil2015/tools_file/blob/master/img/react-native-table-component/exampleTwo.png?raw=true" width="320"/>
-
 ```jsx
 import React from 'react';
 import { View, Text } from 'react-native';
@@ -214,7 +206,7 @@ const demoPage = () => {
 
   return (
     <View flex={1}>
-      <AsTable
+      <BeautifulTable
         columns={columns}
         data={data}
         isExpandShow
@@ -229,7 +221,7 @@ const demoPage = () => {
         // 点击 table 后，展开子项
         expandedRender={(item, index) => {
           return (
-            <AsTable
+            <BeautifulTable
               hideHeader
               columns={columns}
               data={data}

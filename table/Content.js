@@ -62,7 +62,7 @@ export default function TableContent({
           if (__DEV__) {
             if (!key) {
               console.warn(
-                `AsTable expected a api \`fieldKey\`, that can not find its value find in data item now`
+                `BeautifulTable expected a api \`fieldKey\`, that can not find its value find in data item now`
               )
             }
           }

@@ -1,6 +1,5 @@
 import React from 'react'
 import { View, Text, StyleSheet, Dimensions } from 'react-native'
-import colors from '~/common/colors'
 
 const { width: screenWidth } = Dimensions.get('window')
 
@@ -20,7 +19,7 @@ export const multiTitles = (titles = []) => (
 const styles = StyleSheet.create({
   tableTitle: {
     fontSize: 11,
-    color: colors.remark,
+    color: '#999',
     alignSelf: 'flex-end'
   }
 })

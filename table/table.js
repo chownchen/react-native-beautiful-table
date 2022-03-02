@@ -9,9 +9,7 @@ import { Table } from 'react-native-table-component'
 
 import Content from './Content'
 import Header from './Header'
-import Loading, { SizeEnum } from '~/components/loading'
-
-import colors from '~/common/colors'
+import Loading, { SizeEnum } from '../loading'
 
 const HEADER_HEIGHT = 38
 const CONTENT_ITEM_HEIGHT = 42
@@ -117,7 +115,7 @@ const TableBody = ({
     if (!isReady) return null
 
     const tableContent = (
-      <View ref={ref} onLayout={onLayout}>
+      <View onLayout={onLayout}>
         <Table style={[baseStyles.container, containerStyle]}>
           <Header
             headerData={headerData}
@@ -187,7 +185,7 @@ TableBody.defaultProps = {
 
 export const baseStyles = StyleSheet.create({
   container: {
-    backgroundColor: colors.white
+    backgroundColor: '#fff'
   }
 })
 

@@ -10,7 +10,7 @@ import TableBody from './table'
 
 import { sum } from './utils'
 
-export default function AsTable({
+export default function BeautifulTable({
   data,
   columns,
   scrollHorizontalAble,

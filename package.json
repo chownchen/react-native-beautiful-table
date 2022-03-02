@@ -1,6 +1,6 @@
 {
   "name": "react-native-beautiful-table",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "use like antd table for react native",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gil2015/react-native-table-component.git"
+    "url": "git+https://github.com/chownchen/react-native-beautiful-table"
   },
   "keywords": [
     "react-native",
@@ -17,14 +17,15 @@
     "antd",
     "react-native-cell",
     "react-native-table",
-    "react-native-table-component"
+    "react-native-table-component",
+    "react-native-beautiful-table"
   ],
   "author": "gil2015",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Gil2015/react-native-table-component/issues"
+    "url": "https://github.com/chownchen/react-native-beautiful-table/issues"
   },
-  "homepage": "https://github.com/Gil2015/react-native-table-component#readme",
+  "homepage": "https://github.com/chownchen/react-native-beautiful-table#readme",
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.10.0",
