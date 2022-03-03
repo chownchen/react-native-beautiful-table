@@ -1,4 +1,4 @@
-# React Native Beautiful Component
+# React Native Beautiful Table
 
 ## 介绍
 这是一个 api 类似 `antd-table` 的 react-native 组件库，用配置化的方式使用非常方便
@@ -29,11 +29,11 @@
 <br/><br/>
 
 ## 安装
-> npm install react-native-beautiful-component
+> npm install react-native-beautiful-table
 
 `USE:`
 ```jsx
-import BeautifulTable from 'react-native-beautiful-component';
+import BeautifulTable from 'react-native-beautiful-table';
 ```
 
 ## 版本日志
@@ -50,7 +50,7 @@ import BeautifulTable from 'react-native-beautiful-component';
 ```jsx
 import React from 'react';
 import { View } from 'react-native';
-import BeautifulTable from 'react-native-beautiful-component';
+import BeautifulTable from 'react-native-beautiful-table';
 
 const demoPage = () => {
 
@@ -105,7 +105,7 @@ const demoPage = () => {
 ```jsx
 import React from 'react';
 import { View, Text } from 'react-native';
-import BeautifulTable from 'react-native-beautiful-component';
+import BeautifulTable from 'react-native-beautiful-table';
 
 const demoPage = () => {
 
@@ -160,7 +160,7 @@ const demoPage = () => {
 ```jsx
 import React from 'react';
 import { View, Text } from 'react-native';
-import BeautifulTable from 'react-native-beautiful-component';
+import BeautifulTable from 'react-native-beautiful-table';
 
 const demoPage = () => {
 
