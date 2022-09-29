@@ -35,7 +35,7 @@
     "react": "^16.7.0",
     "react-native": "^0.57.8"
   },
-  "dependencies": {
+  "peerDependencies": {
     "lodash": "~4.17.21",
     "react-native-table-component": "~1.2.1",
     "lottie-react-native": "~5.0.1"
